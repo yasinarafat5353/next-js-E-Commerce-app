@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # QuickCart - A simple eCommerce website
 
 QuickCart is an open-source **Next.js eCommerce frontend** project.  
@@ -67,3 +68,6 @@ This project is licensed under the **MIT License**.
 ## 🌟 Contributors
 
 Thanks to everyone who contributes to **QuickCart**!
+=======
+# next-js-E-Commerce-app
+>>>>>>> df435328375294bbaf9b54ec1bcdfe1f597c11bd
