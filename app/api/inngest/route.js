@@ -1,13 +1,15 @@
+import { serve } from "inngest/next";
+import { inngest } from "@/lib/inngest";
+import { syncUserCreation, syncUserDeletion, syncUserUpdation } from "@/config/inngest";
 
-import { InngestApi } from "inngest/next";
-import { inngest, syncUserCreation, syncUserDeletion, syncUserUpdation } from "@/config/inngest";
-
-// Create an API that serves zero functions
+// This route handles Inngest events
 export const { GET, POST, PUT } = serve({
-  client: InngestApi,
+  client: inngest,
   functions: [
     syncUserCreation,
     syncUserUpdation,
-    syncUserDeletion,
-  ],
+    syncUserDeletion
+  ], 
+  
+  
 });
