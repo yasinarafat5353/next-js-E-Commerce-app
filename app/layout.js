@@ -11,18 +11,16 @@ export const metadata = {
   title: "QuickCart - GreatStack",
   description: "E-Commerce with Next.js ",
 };
-
 export default function RootLayout({ children }) {
   return (
-     <ClerkProvider>
-      <html lang="en">
-        <body className={`${outfit.className} antialiased text-gray-700`} >
-          <Toaster />
+    <html lang="en">
+      <body className={`${outfit.className} antialiased text-gray-700`}>
+        <ClerkProvider>
           <AppContextProvider>
             {children}
           </AppContextProvider>
-        </body>
-      </html>
-      </ClerkProvider>
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }
